@@ -1,0 +1,21 @@
+.skills {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+}
+
+.skills .my-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    justify-content: space-evenly;
+    line-height: 30px;
+    
+}
+
+.skills .my-skill li {
+    list-style: square;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avonavi23</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/about-me.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/code.css">
+    <link rel="stylesheet" href="./styles/education.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="align-center">
+            <nav>
+                <a href="#about-me">About me</a>
+                <a href="#skills">Skills</a>
+                <h1>Anna Ivanova</h1>
+                <a href="#code">Code examples</a>
+                <a href="#education">Education</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="information-about-me">
+            <div class="align-center">
+                <h2 id="about-me">About me</h2>
+                <div class="avatar">
+                    <img src="./img/iuviRZlDYUw.jpg" alt="Photo Avonavi23" />
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>My goal is to improve my knowledge of programming, get a job as a front-end developer. 
+                            My strengths: responsibility, quick learning, high communication skills, good stress resistance, friendliness. 
+                            The profession of a front-end developer attracts me with the possibility of comfortable remote work, communication with smart 
+                            versatile people, improving communication skills, the possibility of personal growth, improving the level of the English 
+                            language.My goal is to improve my knowledge of programming, get a job as a front-end developer. My strengths: responsibility, 
+                            quick learning, high communication skills, good stress resistance, friendliness. The profession of a front-end developer 
+                            attracts me with the possibility of comfortable remote work, communication with smart versatile people, improving communication 
+                            sills, the possibility of personal growth, improving the level of the English language.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div class="contact">
+                    <div class="align-center">
+                        <div class="contacts">
+                            <h3>Contact information</h3>
+                                <ul class="contact-information">
+                                    <li class="contact-item phone">
+                                        <img src="./img/call.png" alt="Phone" />
+                                        <p>+7-912-748-99-53</p>
+                                    </li>
+                                    <li class="contact-item mail">
+                                        <img src="./img/mail.png" alt="Mail" />
+                                        <p>anna230997@mail.ru</p>
+                                    </li>
+                                    <li class="contact-item instagram">
+                                        <a href="https://www.instagram.com/anny_avonavi/?utm_medium=copy_link">
+                                            <img src="./img/instagram-logo.png" alt="Instagram" />
+                                        </a>
+                                    </li>
+                                    <li class="contact-item vk">   
+                                        <a href="https://vk.com/annyavonavi">
+                                            <img src="./img/vk.png" alt="VK" />
+                                        </a>
+                                    </li> 
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="skills">
+            <div class="align-center">
+                <h2 id="skills">Skills</h2>
+                <div class="my-skill">
+                    <div>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Less</li>
+                            <li>BEM</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>JS Basic</li>
+                            <li>Git</li>
+                            <li>Figma</li>
+                            <li>Zeplin</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="code" class="code">
+            <div class="align-center">
+                <h2>Code examples</h2>  
+                <div class="code-examples">
+<div>
+    <p>Sum of positive number</p>
+<pre>
+function positiveSum(arr) {
+let sum = 0;
+arr.forEach((item) => {
+    if(item > 0) {
+    sum += item
+    }
+}) 
+return sum;
+}</pre>
+</div>
+<div>
+    <p>String repeat</p>
+<pre>
+function repeatStr (n, s) {
+let str = '';
+for(let i = 0; i &lt; n; i++) {
+    str += s;
+}
+return str;
+}
+</pre>
+</div>
+                </div>
+        </div>
+        </section>
+        <section class="education">
+            <div class="align-center">
+                <h2 id="education">Education</h2>
+                <div class="education-wrapper">
+                    <p class="education-item">Izhevsk State Technical University</p>
+                    <p class="education-item">Faculty of Advertising and Design</p>
+                    <p class="education-item">Bachelor Programs of design</p>
+                    <p class="education-item">2014-2018</p>
+                    <h3>Self-education</h3>
+                    <ul>
+                        <li><a href="https://htmlacademy.ru/courses">Interactive courses on HTML, CSS, JS</a></li>
+                        <li><a href="https://htmlacademy.ru/study">Marathon "Wrap up"</a></li>
+                        <li><a href="https://learn.javascript.ru/">Textbook JS</a></li>
+                    </ul>
+                    <h3>English</h3>
+                    <p class="education-item">Pre-intermediate (A2)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="align-center">
+            <div class="footer-wrapper">
+                <a href="https://rs.school/js/" class="footer-link"><img src="img/rs_school_js.svg" alt="RS school logo" /></a>
+                <a href="https://github.com/Avonavi23"><img src="./img/18282280761580802960.svg" alt="My github" /></a>
+                <p>© «Avonavi23», 2021</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
