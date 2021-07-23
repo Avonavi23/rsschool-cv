@@ -1,0 +1,33 @@
+footer {
+    padding: 20px 10px;
+    width: 100%;
+    background-color: #5f99af;
+    box-shadow: 0px 1px 15px -1px #000;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: auto;
+    height: 100px;
+    align-self: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.footer-wrapper p {
+    align-self: flex-end;
+}
+
+.footer-wrapper > * {
+    margin-left: 50px;
+}
+
+.footer-link {
+    margin-right: auto;
+}
