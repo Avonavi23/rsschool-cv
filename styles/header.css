@@ -1,5 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .align-center {
-    min-width: 992px;
     max-width: 1199px;
     margin: 0 auto;
 }
@@ -11,15 +14,14 @@ header {
     padding: 20px 0;
 }
 
-header nav {
+.desktop-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-header nav a {
+.desktop-navigation a {
     text-decoration: none;
     background-color: #81c4de;
-    width: 200px;
     height: 50px;
     border-radius: 5px;
     display: flex;
@@ -31,7 +33,7 @@ header nav a {
     font-weight: bold;
 }
 
-header nav h1 {
+.header-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,4 +41,116 @@ header nav h1 {
     white-space: nowrap;
     font-family: 'Dancing Script', cursive;
     color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .header-label {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-navigation {
+        display: none;
+    }
+}
+
+.burger-menu {
+    display: none;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+}
+
+.burger-menu-btn {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border: none;
+}
+
+.burger-menu-btn::after {
+    display: block;
+    position: absolute;
+    top: 8px;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border: none;
+}
+
+.burger-menu-btn::before {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .burger-menu-btn {
+        display: block;
+    }
+}
+
+    .bmb-open {
+        width: 0;
+        height: 0;
+    }
+
+    .bmb-open::after {
+        top: -2px;
+        transform: rotateZ(45deg);
+        transition-duration: 0.5s;
+    }
+
+    .bmb-open::before {
+        bottom: -1px;
+        transform: rotateZ(-45deg);
+        transition-duration: 0.5s;
+    }
+
+
+.mobile-navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    background-color: #81c4de;
+    opacity: 0.8;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    background-color: #81c4de;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mobile-navigation-open {
+    display: flex;
+    top: 35px;
 }
