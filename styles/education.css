@@ -27,3 +27,17 @@
 .education-wrapper ul {
     list-style: square outside;
 }
+
+@media (max-width: 425px) {
+    .education-item  {
+        font-size: 1rem;
+    }
+
+    .education-wrapper h3 {
+        font-size: 1rem; 
+    }
+
+    .education-wrapper ul li {
+        font-size: 1rem; 
+    }
+}
