@@ -94,6 +94,11 @@ main h2 {
     width: 80px;
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
 @media (max-width: 1260px) {
     .information-about-me .avatar img {
         margin-left: 15px;
