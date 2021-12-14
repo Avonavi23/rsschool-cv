@@ -1,3 +1,3 @@
 # rsschool-cv
-https://Avonavi23.github.io/rsschool-cv/
-https://Avonavi23.github.io/rsschool-cv/cv
+1. https://Avonavi23.github.io/rsschool-cv/
+2. https://Avonavi23.github.io/rsschool-cv/cv
