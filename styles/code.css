@@ -1,6 +1,6 @@
 .code {
     width: 100%;
-    background-color: #81c4de;
+    background-color: #1e1e1e;
     padding: 5px 0 30px;
 }
 
@@ -18,16 +18,40 @@
 
 .code-examples p {
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
-.code-examples img {
-    height: 195px;
-    width: 320px;
-    object-fit: cover;
+.code-examples pre {
+    color: #fff;
+    font-family: Consolas;
+}
+
+.code-examples pre .color-blue {
+   color: #4479a1;
+}
+
+.code-examples pre .color-yellow {
+    color: #a18d5f;
+ }
+.code-examples pre .color-light-blue {
+     color: #96b9c7;
+ }
+
+
+.code-examples pre .color-orange {
+    color: #9e7260;
+}
+
+.code-examples pre .color-green {
+    color: #98a15f;
+}
+
+.code-examples pre .color-red {
+    color: #915fb6;
 }
 
 .code .my-works .projects{

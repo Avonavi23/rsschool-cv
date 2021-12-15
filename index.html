@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
+    <link href="http://www.microsoft.com/typography/ctfonts" rel="stylesheet">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/about-me.css">
     <link rel="stylesheet" href="./styles/skills.css">
@@ -115,12 +116,43 @@
                 <h2>Code examples</h2>  
                 <div class="code-examples">
             <div>
-                <p>Sum of positive number</p>
-                <img src="./img/Screenshot_5.jpg" alt="code-1">
+                <p>Change the text like <br>border-left-width to borderLeftWidth</p>
+<pre>
+
+<span class="color-blue">function</span> <span class="color-yellow">camelize</span>(<span class="color-light-blue">str</span>) {
+    <span class="color-blue">let</span> <span class="color-light-blue">newArr</span> = [];
+    <span class="color-blue">let</span> <span class="color-light-blue">arr</span> = <span class="color-light-blue">str</span>.<span class="color-yellow">split</span>(<span class="color-orange">'-'</span>);
+    
+    <span class="color-light-blue">arr</span>.<span class="color-yellow">forEach</span>(<span class="color-blue">function</span>(<span class="color-light-blue">item</span>, <span class="color-light-blue">index</span>) {
+    
+        <span class="color-red">if</span>(<span class="color-light-blue">item</span>.<span class="color-light-blue">length</span> >= <span class="color-green">1</span>) {
+            <span class="color-red">if</span>(<span class="color-light-blue">index</span> === <span class="color-green">0</span>) {
+                <span class="color-light-blue">newArr</span>.<span class="color-yellow">push</span>(<span class="color-light-blue">item</span>);
+            } <span class="color-red">else</span> {
+                <span class="color-light-blue">newArr</span>.<span class="color-yellow">push</span>(<span class="color-light-blue">item</span>[<span class="color-green">0</span>].<span class="color-yellow">toUpperCase</span>() + <span class="color-light-blue">item</span>.<span class="color-yellow">slice</span>(<span class="color-green">1</span>));
+            }
+        }
+    })
+    <span class="color-red">return</span> <span class="color-light-blue">newArr</span>.<span class="color-yellow">join</span>(<span class="color-orange">''</span>);
+};
+
+
+
+</pre>
             </div>
             <div>
-                <p>String repeat</p>
-                <img src="./img/Screenshot_1.jpg" alt="code-2">
+                <p>Range filtering</p>
+<pre>
+
+
+
+<span class="color-blue">function</span> <span class="color-yellow">filterRange</span>(<span class="color-light-blue">arr</span>, <span class="color-light-blue">a</span>, <span class="color-light-blue">b</span>) {
+    <span class="color-red">return</span> <span class="color-light-blue">arr</span>.<span class="color-yellow">filter</span>((<span class="color-light-blue">item</span>) <span class="color-blue">=></span> {
+        <span class="color-red">if</span> (<span class="color-light-blue">item</span> < <span class="color-light-blue">a</span> || <span class="color-light-blue">item</span> > <span class="color-light-blue">b</span>) <span class="color-red">return</span> <span class="color-blue">false</span>;
+        <span class="color-red">return</span> <span class="color-blue">true</span>;
+    })
+};  
+</pre>
             </div>
                 </div>
         <div class="my-works">
